@@ -3,7 +3,7 @@ body {
     background-color: #FFEA00;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 400;
+    font-weight: 600;
     font-style: normal;
 }
 header {
@@ -21,10 +21,6 @@ header {
 .container_main {
     background-color: #FFF01F;
     margin: 0 15% 0 15%;
-}
-.Navbar {
-    display: block;
-    font-family: "Montserrat", sans-serif;
 }
 .Navbar ul {
     list-style: none;
@@ -62,11 +58,23 @@ header {
     color: black;
     font-size: 40px;
 }
+#Selvennys {
+    text-align: center;
+    padding: 10px 0;
+}
+#Selvennys p {
+    font-size: 20px;
+    font-weight: inherit;
+}
 footer {
     background-color: #FCD12A;
     width: 100%;
-    padding: 20px 0 20px 0;
+    padding: 20px 0;
 }
-footer div {
-    margin: 0 15% 0 15%;
+.footer-content {
+    margin: 0 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
