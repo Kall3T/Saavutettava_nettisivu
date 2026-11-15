@@ -44,7 +44,7 @@ header {
     color: black;
     text-decoration: none;
 }
-#icon {
+#NavIcon {
     display: block;
     background-color: white;
     border-radius: 100px;
@@ -54,7 +54,7 @@ header {
     margin: 0 10px 0 10px;
     padding: 10px 5px;
 }
-#icon a i {
+.icon a i {
     color: black;
     font-size: 40px;
 }
@@ -77,4 +77,36 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+.footer-media ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+.footer-media ul li {
+    padding: 0 0 0 10px;
+}
+.footer-info ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+.footer-info li.footerObject {
+    background-color: white;
+    border-radius: 10px;
+    padding: 8px 25px;
+}
+.footer-info li.footerObject a {
+    display: block;
+    font-family: "Montserrat", sans-serif !important;
+    font-size: 20px !important;
+    font-weight: 600 !important;
+    font-style: normal !important;
+    text-align: center;
+    color: black;
+    text-decoration: none;
 }
