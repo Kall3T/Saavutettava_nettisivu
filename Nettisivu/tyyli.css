@@ -1,3 +1,4 @@
+/* Sivun tyyli muotoilu ja asettelu */
 * { margin: 0; padding: 0; }
 body {
     background-color: #FFEA00;
@@ -6,6 +7,7 @@ body {
     font-weight: 600;
     font-style: normal;
 }
+/* Headerin tyylittely */
 header {
     background-color: #FCD12A;
     width: 100%;
@@ -18,10 +20,12 @@ header {
     justify-content: space-between;
     align-items: center;
 }
+/* Pää sisällön tyylittely */
 .container_main {
     background-color: #FFF01F;
     margin: 0 15% 0 15%;
 }
+/* Headerin navigointi palkin tyylittely */
 .Navbar ul {
     list-style: none;
     display: flex;
@@ -58,13 +62,19 @@ header {
     color: black;
     font-size: 40px;
 }
+/* Pää sisällön aloitus tyylittely */
 #Selvennys {
     text-align: center;
     padding: 10px 0;
+    font-size: 30px;
 }
 #Selvennys p {
-    font-size: 20px;
     font-weight: inherit;
+}
+/* Honorable mentions osion tyylittely */
+.main-otsikko h2 {
+    padding: 20px 0 0 20px;
+    font-size: 45px;
 }
 #card1 {
     display: flex;
@@ -125,6 +135,7 @@ header {
     padding: 20px 20px;
     border-radius: 10px;
 }
+/* Top 10 osion tyylittely */
 #top10 {
     display: flex;
     justify-content: center;
@@ -132,6 +143,7 @@ header {
 #top10 h2 {
     padding: 20px 0 20px 0;
 }
+/* Kuvarullan tyylittely ja sen takana olevat toiminnot */
 .kuvarulla {
     position: relative;
     width: 100%;
@@ -255,6 +267,9 @@ header {
     opacity: 0.7;
     z-index: 2;
 }
+/* Gallerian tyylittely */
+
+/* Footerin tyylittely */
 footer {
     background-color: #FCD12A;
     width: 100%;
@@ -299,3 +314,5 @@ footer {
     color: black;
     text-decoration: none;
 }
+
+/* Eri ikkunoiden tyylittely (700px, 1000px, 1400px jne)*/
