@@ -75,6 +75,9 @@ header {
 #card1-img img {
     max-width: 400px;
     height: auto;
+    background-color: #FFEA00;
+    padding: 20px 20px;
+    border-radius: 10px;
 }
 #card1-img ul {
     list-style: none;
@@ -92,6 +95,9 @@ header {
     max-width: 350px;
     height: auto;
     margin-top: -150px;
+    background-color: #FFEA00;
+    padding: 20px 20px;
+    border-radius: 10px;
 }
 #card2 {
     display: flex;
@@ -110,6 +116,13 @@ header {
     background-color: white;
     padding: 20px 6px 3px 6px;
     border-radius: 15px;
+}
+#top10 {
+    display: flex;
+    justify-content: center;
+}
+#top10 h2 {
+    padding: 20px 0 20px 0;
 }
 footer {
     background-color: #FCD12A;
