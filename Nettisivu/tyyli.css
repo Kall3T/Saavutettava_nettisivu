@@ -72,6 +72,9 @@ header {
     justify-content: space-between;
     padding: 20px 40px;
 }
+#card1-text {
+    font-size: 30px;
+}
 #card1-img img {
     max-width: 400px;
     height: auto;
@@ -84,9 +87,32 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     gap: 20px;
 }
 #card1-img ul li a{
+    background-color: white;
+    padding: 20px 6px 3px 6px;
+    border-radius: 15px;
+}
+#card2 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+#card2-text {
+    font-size: 30px;
+}
+#card2-img ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+#card2-img ul li a{
     background-color: white;
     padding: 20px 6px 3px 6px;
     border-radius: 15px;
@@ -99,30 +125,135 @@ header {
     padding: 20px 20px;
     border-radius: 10px;
 }
-#card2 {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    padding: 20px 40px;
-}
-#card2-img ul {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 20px;
-}
-#card2-img ul li a{
-    background-color: white;
-    padding: 20px 6px 3px 6px;
-    border-radius: 15px;
-}
 #top10 {
     display: flex;
     justify-content: center;
 }
 #top10 h2 {
     padding: 20px 0 20px 0;
+}
+.kuvarulla {
+    position: relative;
+    width: 100%;
+    max-width: 620px;
+    height: clamp(280px, 45vw, 400px);
+    margin: 0 auto;
+    overflow: hidden;
+}
+.kuvarulla input {
+    display: none;
+}
+.kuvat {
+    position: absolute;
+    inset: 0;
+}
+.kuva {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 35%;
+    height: 75%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    transition: all 0.4s ease;
+}
+.kuva img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+}
+.kuvarulla .nuoli {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 35px;
+    height: 100px;
+    background-color: white;
+    color: black;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 22px;
+    border-radius: 8px;
+}
+.kuvarulla .vasen {
+    left: 5px;
+}
+.kuvarulla .oikea {
+    right: 5px;
+}
+#kuva1:checked ~ .nuoli1,
+#kuva2:checked ~ .nuoli2,
+#kuva3:checked ~ .nuoli3,
+#kuva4:checked ~ .nuoli4 {
+    display: flex;
+}
+#kuva1:checked ~ .kuvat .kuva1 {
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.15);
+    opacity: 1;
+    z-index: 3;
+}
+#kuva1:checked ~ .kuvat .kuva2 {
+    left: 82%;
+    opacity: 0.7;
+    z-index: 2;
+}
+#kuva1:checked ~ .kuvat .kuva4 {
+    left: 18%;
+    opacity: 0.7;
+    z-index: 2;
+}
+#kuva2:checked ~ .kuvat .kuva2 {
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.15);
+    opacity: 1;
+    z-index: 3;
+}
+#kuva2:checked ~ .kuvat .kuva3 {
+    left: 82%;
+    opacity: 0.7;
+    z-index: 2;
+}
+#kuva2:checked ~ .kuvat .kuva1 {
+    left: 18%;
+    opacity: 0.7;
+    z-index: 2;
+}
+#kuva3:checked ~ .kuvat .kuva3 {
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.15);
+    opacity: 1;
+    z-index: 3;
+}
+#kuva3:checked ~ .kuvat .kuva4 {
+    left: 82%;
+    opacity: 0.7;
+    z-index: 2;
+}
+#kuva3:checked ~ .kuvat .kuva2 {
+    left: 18%;
+    opacity: 0.7;
+    z-index: 2;
+}
+#kuva4:checked ~ .kuvat .kuva4 {
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.15);
+    opacity: 1;
+    z-index: 3;
+}
+#kuva4:checked ~ .kuvat .kuva1 {
+    left: 82%;
+    opacity: 0.7;
+    z-index: 2;
+}
+#kuva4:checked ~ .kuvat .kuva3 {
+    left: 18%;
+    opacity: 0.7;
+    z-index: 2;
 }
 footer {
     background-color: #FCD12A;
