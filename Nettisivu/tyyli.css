@@ -7,6 +7,12 @@ body {
     font-weight: 600;
     font-style: normal;
 }
+hr {
+    height: 2px;
+    border-width: 0;
+    color: rgb(201, 161, 1);
+    background-color: rgb(201, 161, 1);
+}
 /* Headerin tyylittely */
 header {
     background-color: #FCD12A;
@@ -268,7 +274,18 @@ header {
     z-index: 2;
 }
 /* Gallerian tyylittely */
-
+.kuva-galleria {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 15px 15px;
+}
+.kuva-galleria img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
 /* Footerin tyylittely */
 footer {
     background-color: #FCD12A;
