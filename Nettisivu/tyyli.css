@@ -1,6 +1,7 @@
 /* Sivun tyyli muotoilu ja asettelu */
 * { margin: 0; padding: 0; }
 body {
+    max-width: 1700px;
     background-color: #FFEA00;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
@@ -333,3 +334,256 @@ footer {
 }
 
 /* Eri ikkunoiden tyylittely (700px, 1000px, 1400px jne)*/
+/* Alle 1200px */
+@media (max-width: 1200px) {
+    .header-content,
+    .footer-content,
+    .container_main {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    .header-content h1 {
+        font-size: 28px;
+    }
+    .Navbar ul,
+    .footer-info ul {
+        gap: 15px;
+    }
+    .Navbar li.NavObject,
+    .footer-info li.footerObject {
+        padding: 8px 18px;
+    }
+    .Navbar li.NavObject a,
+    .footer-info li.footerObject a {
+        font-size: 18px !important;
+    }
+    #Selvennys {
+        font-size: 28px;
+    }
+    .main-otsikko h2 {
+        font-size: 40px;
+    }
+    #card1,
+    #card2 {
+        padding: 20px 30px;
+        gap: 20px;
+    }
+    #card1-text,
+    #card2-text {
+        font-size: 27px;
+    }
+    #card1-img img {
+        max-width: 360px;
+    }
+    #card2-img img {
+        max-width: 330px;
+        margin-top: -100px;
+    }
+}
+/* Alle 1000px */
+@media (max-width: 1000px) {
+    .header-content,
+    .footer-content,
+    .container_main {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .header-content h1 {
+        font-size: 25px;
+    }
+    .Navbar ul {
+        gap: 10px;
+    }
+    .Navbar li.NavObject {
+        padding: 7px 12px;
+    }
+    .Navbar li.NavObject a {
+        font-size: 16px !important;
+    }
+    #Selvennys {
+        font-size: 25px;
+    }
+    .main-otsikko h2 {
+        font-size: 36px;
+    }
+    #card1,
+    #card2 {
+        padding: 15px 20px;
+        gap: 15px;
+    }
+    #card1-text,
+    #card2-text {
+        font-size: 23px;
+    }
+    #card1-img img {
+        max-width: 310px;
+    }
+    #card2-img img {
+        max-width: 290px;
+        margin-top: -60px;
+    }
+    .footer-info ul,
+    .footer-media ul {
+        gap: 10px;
+    }
+    .footer-info li.footerObject {
+        padding: 7px 12px;
+    }
+    .footer-info li.footerObject a {
+        font-size: 16px !important;
+    }
+}
+/* Alle 850px */
+@media (max-width: 850px) {
+    .header-content,
+    .footer-content,
+    .container_main {
+        margin-left: 6%;
+        margin-right: 6%;
+    }
+    .header-content h1 {
+        font-size: 22px;
+    }
+    .Navbar ul {
+        gap: 7px;
+    }
+    .Navbar li.NavObject {
+        padding: 6px 9px;
+    }
+    .Navbar li.NavObject a {
+        font-size: 14px !important;
+    }
+    #Selvennys {
+        font-size: 22px;
+    }
+    .main-otsikko h2 {
+        font-size: 32px;
+    }
+    #card1,
+    #card2 {
+        padding: 15px 10px;
+        gap: 12px;
+    }
+    #card1-text,
+    #card2-text {
+        font-size: 20px;
+    }
+    #card1-img img {
+        max-width: 260px;
+    }
+    #card2-img img {
+        max-width: 250px;
+        margin-top: -30px;
+    }
+    .footer-info ul,
+    .footer-media ul {
+        gap: 8px;
+    }
+    .footer-info li.footerObject {
+        padding: 6px 9px;
+    }
+    .footer-info li.footerObject a {
+        font-size: 14px !important;
+    }
+    .kuvarulla {
+        max-width: 550px;
+    }
+}
+/* Alle 700px */
+@media (max-width: 700px) {
+    .header-content,
+    .footer-content,
+    .container_main {
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+    .header-content h1 {
+        font-size: 20px;
+    }
+    .Navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+    }
+    .Navbar li.NavObject {
+        padding: 6px 10px;
+    }
+    .Navbar li.NavObject a {
+        font-size: 13px !important;
+    }
+    #NavIcon {
+        margin: 0 5px;
+    }
+    .icon a i {
+        font-size: 28px;
+    }
+    #Selvennys {
+        font-size: 19px;
+    }
+    .main-otsikko h2 {
+        font-size: 27px;
+        text-align: center;
+        padding-left: 5px;
+    }
+    #card1,
+    #card2 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 15px 10px;
+        gap: 15px;
+    }
+    #card1-text,
+    #card2-text {
+        font-size: 18px;
+    }
+    #card1-img,
+    #card2-img {
+        max-width: 100%;
+    }
+    #card1-img img,
+    #card2-img img {
+        max-width: 100%;
+        height: auto;
+        margin-top: 0;
+        padding: 15px;
+    }
+    #card1-img ul,
+    #card2-img ul {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+    #top10 h2 {
+        font-size: 23px;
+    }
+    .kuvarulla {
+        height: 280px;
+    }
+    .kuva {
+        width: 45%;
+    }
+    .kuva-galleria {
+        display: block;
+        padding: 10px;
+    }
+    .kuva-galleria img {
+        width: 100%;
+        padding-bottom: 10px;
+        height: auto;
+        object-fit: cover;
+    }
+    .footer-content {
+        flex-wrap: wrap;
+    }
+    .footer-info ul,
+    .footer-media ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .footer-info li.footerObject {
+        padding: 6px 9px;
+    }
+    .footer-info li.footerObject a {
+        font-size: 13px !important;
+    }
+}
